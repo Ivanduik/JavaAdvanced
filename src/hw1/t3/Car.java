@@ -1,6 +1,6 @@
 package hw1.t3;
 
-public class Car implements Comparable<Car> { //<Car>{
+public class Car implements Comparable<Car> {
     int speed;
     int price;
     String model;
@@ -18,9 +18,8 @@ public class Car implements Comparable<Car> { //<Car>{
         return this.model + " " + this.color + " " + this.speed + " " + this.price;
     }
 
-    // Сортируем по скорости/цене
     @Override
-    public int compareTo(Car o) {    // public int compareTo(Car o) {
+    public int compareTo(Car o) {
         if ((this.speed - o.speed) == 0) return 0;
         else if ((this.price - o.price) == 0) return 0;
         else if (this.model.compareTo(o.model) == 0) return 0;
@@ -32,6 +31,4 @@ public class Car implements Comparable<Car> { //<Car>{
                 / 4; // Возвращаем среднеарифметическое разницы, на случай сортировки
     }
 
-    // Сравнение 2-х строковых значений
-    // return this.model.compareTo((Car)o).model);
 }
