@@ -15,8 +15,8 @@ public class Main {
         for (Car temp : c) {
             System.out.println(temp);
         }
-        System.out.println("c11.compareTo(c1) - "+c11.compareTo(c1));
-        System.out.println("c11.compareTo(c12) - "+c11.compareTo(c12));
+        System.out.println("c11.compareTo(c1) - " + c11.compareTo(c1));
+        System.out.println("c11.compareTo(c12) - " + c11.compareTo(c12));
 
     }
 }
