@@ -1,8 +1,6 @@
 package hw2.t2;
 
 import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.ListIterator;
 
 
 public class MyCollection<T> extends ArrayList<T> {

@@ -20,15 +20,28 @@ public class Car implements Comparable<Car> {
 
     @Override
     public int compareTo(Car o) {
-        if ((this.speed - o.speed) == 0) return 0;
-        else if ((this.price - o.price) == 0) return 0;
-        else if (this.model.compareTo(o.model) == 0) return 0;
-        else if (this.color.compareTo(o.color) == 0) return 0;
-        return (this.model.compareTo(o.color)
-                + this.model.compareTo(o.model)
-                + this.price - o.price
-                + this.speed - o.speed)
-                / 4; // Возвращаем среднеарифметическое разницы, на случай сортировки
+        int temp = this.speed - o.speed;   // int temp = this.speed - o.speed;
+        if (temp == 0) {
+            if ((this.price - o.price) == 0) {
+                if (this.model.compareTo(o.model) == 0) {
+                    if (this.color.compareTo(o.color) != 0) {
+                        return this.color.compareTo(o.color);
+                    } else return temp;
+                } else return this.model.compareTo(o.model);
+            } else return this.price - o.price;
+        } else {
+            return temp;
+        }
+
+//        if ((this.speed - o.speed) == 0) return 0;
+//        else if ((this.price - o.price) == 0) return 0;
+//        else if (this.model.compareTo(o.model) == 0) return 0;
+//        else if (this.color.compareTo(o.color) == 0) return 0;
+//        return (this.model.compareTo(o.color)
+//                + this.model.compareTo(o.model)
+//                + this.price - o.price
+//                + this.speed - o.speed)
+//                / 4; // Возвращаем среднеарифметическое разницы, на случай сортировки
     }
 
 }
