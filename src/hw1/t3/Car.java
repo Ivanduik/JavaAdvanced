@@ -33,15 +33,6 @@ public class Car implements Comparable<Car> {
             return temp;
         }
 
-//        if ((this.speed - o.speed) == 0) return 0;
-//        else if ((this.price - o.price) == 0) return 0;
-//        else if (this.model.compareTo(o.model) == 0) return 0;
-//        else if (this.color.compareTo(o.color) == 0) return 0;
-//        return (this.model.compareTo(o.color)
-//                + this.model.compareTo(o.model)
-//                + this.price - o.price
-//                + this.speed - o.speed)
-//                / 4; // Возвращаем среднеарифметическое разницы, на случай сортировки
     }
 
 }
