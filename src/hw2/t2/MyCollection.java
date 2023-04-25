@@ -10,6 +10,7 @@ public class MyCollection<T> extends ArrayList<T> {
             tmp.add(str);
             tmp.add(str);
         }
+        clear();
         addAll(0,tmp);
 }
 
