@@ -26,7 +26,7 @@ public class Main {
         fileOut.close();
         int size = fileIn.available();
         for (int i = 0; i < size; i++) {
-            System.out.printf("%c", fileIn.read());//тут не складуха с с консолью идеа
+            System.out.printf("%c", fileIn.read());//тут не складуха с консолью идеа
         }
         fileIn.close();
     }
