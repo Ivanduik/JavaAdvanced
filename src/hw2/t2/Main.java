@@ -1,24 +1,13 @@
 package hw2.t2;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
 public class Main {
     public static void main(String[] args) {
-        MyCollection<String> myCollection = new MyCollection<>();
-        String str = null;
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        System.out.println("Введіть із клавіатури 5 слів:");
-        for (int i=0;i<5;i++){
-            System.out.println((i+1) + "слово ");            
-        try {
-            str = reader.readLine();
-        }catch (IOException e){
-            System.out.println(e.getMessage());
-        }             
-        myCollection.add(str);
+        MyCollection<String> mm=new MyCollection<>();
+        mm.add("ddd");
+        mm.add("frr");
+        mm.doubleValues();
+        mm.doubleValues();
+        System.out.println(mm);
             }
-        myCollection.doubleValues();
-                System.out.println(myCollection);
-    }
+
 }

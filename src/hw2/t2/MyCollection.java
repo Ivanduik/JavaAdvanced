@@ -11,7 +11,8 @@ public class MyCollection<T> extends ArrayList<T> {
             tmp.add(str);
         }
         clear();
-        addAll(0,tmp);
+        this.clear();
+        addAll(tmp);
 }
 
 }

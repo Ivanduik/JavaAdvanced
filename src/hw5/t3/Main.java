@@ -40,9 +40,9 @@ public class Main {
         System.out.println("All methods - ");
         Method[]  methods= classInfo.getDeclaredMethods();
         for (Method tmp : methods) {
-            System.out.println("    "+tmp.getName()+" - "+getModifier(tmp.getModifiers()));
+            System.out.println("    "+getModifier(tmp.getModifiers())+" - "+tmp.getName()+" - "+tmp.getReturnType());
             for (Class<?> methPar: tmp.getParameterTypes() ){
-                System.out.println("        field - "+methPar);
+                System.out.println("        arg - "+methPar);
             }
         }
     }
