@@ -9,7 +9,18 @@ import java.util.Date;
 import java.util.GregorianCalendar;
 
 public class MyDate {
-    public GregorianCalendar dateDiff(String inputDateStr) throws ParseException {
+    private  String inputDateStr;
+
+    public MyDate() {
+    }
+    public MyDate(String inputDateStr)
+    {
+        this.inputDateStr=inputDateStr;
+    }
+    public  void setDateOfBirthday(String inputDateStr){
+        this.inputDateStr=inputDateStr;
+    }
+    public GregorianCalendar dateDiff() throws ParseException {
         GregorianCalendar calendar = new GregorianCalendar();
         Period period;
         SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");

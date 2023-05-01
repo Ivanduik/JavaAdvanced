@@ -15,13 +15,14 @@ public class Main {
         try {
             inputDateStr = reader.readLine();
             try {
+                myDate.setDateOfBirthday(inputDateStr);
                 System.out.printf("You are %d years old, %d months, %d days, %d hours, %d minutes, %d seconds.",
-                        myDate.dateDiff(inputDateStr).get(Calendar.YEAR),
-                        myDate.dateDiff(inputDateStr).get(Calendar.MONTH),
-                        myDate.dateDiff(inputDateStr).get(Calendar.DATE),
-                        myDate.dateDiff(inputDateStr).get(Calendar.HOUR),
-                        myDate.dateDiff(inputDateStr).get(Calendar.MINUTE),
-                        myDate.dateDiff(inputDateStr).get(Calendar.SECOND)
+                        myDate.dateDiff().get(Calendar.YEAR),
+                        myDate.dateDiff().get(Calendar.MONTH),
+                        myDate.dateDiff().get(Calendar.DATE),
+                        myDate.dateDiff().get(Calendar.HOUR),
+                        myDate.dateDiff().get(Calendar.MINUTE),
+                        myDate.dateDiff().get(Calendar.SECOND)
                 );
             } catch (ParseException e) {
                 System.out.println(e.getMessage());
